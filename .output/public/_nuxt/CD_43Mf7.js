@@ -1,0 +1,1 @@
+import{H as o,I as n,i as r}from"./vx34gPlQ.js";const d=()=>{const e=o("wishlist:items",()=>[]),i=s=>e.value.some(t=>t.id===s),l=s=>{i(s.id)?e.value=e.value.filter(t=>t.id!==s.id):e.value.push(s)},u=s=>{e.value=e.value.filter(t=>t.id!==s)},a=r(()=>e.value.length);return n({items:e,count:a,isWishlisted:i,toggle:l,remove:u})};export{d as u};

@@ -1,0 +1,51 @@
+// assets/scss/_categories.scss
+// Each category: (dark, mid, light) color stops
+
+$cat-technology-dark:   #1D5099;
+$cat-technology-mid:    #4A9EFF;
+$cat-technology-light:  #E8F3FF;
+
+$cat-science-dark:      #166640;
+$cat-science-mid:       #2ECC71;
+$cat-science-light:     #E8FBF3;
+
+$cat-business-dark:     #994400;
+$cat-business-mid:      #F5A623;
+$cat-business-light:    #FFF8EC;
+
+$cat-fiction-dark:      #55158C;
+$cat-fiction-mid:       #A855F7;
+$cat-fiction-light:     #F5EEFF;
+
+$cat-history-dark:      #7A3E0A;
+$cat-history-mid:       #C0874F;
+$cat-history-light:     #FFF5EB;
+
+$cat-design-dark:       #991555;
+$cat-design-mid:        #FF6B9D;
+$cat-design-light:      #FFF0F5;
+
+$cat-philosophy-dark:   #2D3F77;
+$cat-philosophy-mid:    #64748B;
+$cat-philosophy-light:  #F1F5F9;
+
+$cat-self-help-dark:    #0D7755;
+$cat-self-help-mid:     #10B981;
+$cat-self-help-light:   #ECFDF5;
+
+$cat-travel-dark:       #165577;
+$cat-travel-mid:        #38BDF8;
+$cat-travel-light:      #F0F9FF;
+
+$cat-cooking-dark:      #881A10;
+$cat-cooking-mid:       #EF4444;
+$cat-cooking-light:     #FFF5F5;
+
+// CSS custom properties map for dynamic category theming
+@mixin category-theme($name, $dark, $mid, $light) {
+  &--#{$name} {
+    --cat-dark:  #{$dark};
+    --cat-mid:   #{$mid};
+    --cat-light: #{$light};
+  }
+}
